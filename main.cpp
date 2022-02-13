@@ -6,13 +6,13 @@ using namespace std;
 int main()
 {
 
-    //Creates two chrono objects for comparions later.
-
-    //The Chrono
+    //Creates two chrono objects for comparison later.
     std::chrono::time_point<std::chrono::system_clock> start, end;
 
+    //Takes the Current time
     start = std::chrono::system_clock::now();
 
+    //Returns the needed jumps to go from start to end point
     int steps = Driver::MinimumSteps(1000,1000,99,100,10,19);
 
 
